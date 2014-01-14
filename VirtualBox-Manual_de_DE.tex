@@ -28,15 +28,14 @@ Dies ist -- auch aus Sicherheitsgründen -- nicht überall möglich. Hier bietet
 
 In diesem Dokument wird erklärt, wie man so eine virtuelle Maschine mit der kostenlosen, quelloffenen Software Oracle VM VirtualBox erstellt und verwendet.
 
-
-
 \section{VirtualBox installieren}
 Die Installationsdateien von Oracle VM Virtualbox findest du im \command{IMAGINARY ENTDECKERBOX}-Ordner auf der DVD. Alternativ kannst du auch die jeweils aktuelle Version von Oracle VM VirtualBox auf der Internetseite \url{https://www.virtualbox.org} herunterladen.
 
 Führe das Installationsprogramm für dein Betriebssystem aus und folge dabei den Anweisungen. Nach dem Start von VirtualBox sollte das Programm etwa wie in \cref{VBox10} aussehen. Bitte beachte, dass sich die folgenden Anweisungen und \nameCrefs{VBox10} je nach Betriebssystem geringfügig unterscheiden können.
 
 \begin{figure}[h!]
-\centering \gfxscalebox{\smallshadow{\includegraphics{VBox10}}}
+\centering
+\gfxscalebox{\smallshadow{\includegraphics{VBox10_de_DE}}}
 \caption{Startbildschirm von Oracle VM VirtualBox.}
 \label{VBox10}
 \end{figure}
@@ -45,21 +44,23 @@ Führe das Installationsprogramm für dein Betriebssystem aus und folge dabei de
 Um nun eine virtuelle Maschine anzulegen, klickt man in VirtualBox of \command{Neu}. Im folgenden Dialog gibt man der virtuellen Maschine einen Namen, z.\,B. \command{IMAGINARY Entdeckerbox} und wählt Typ (\command{Linux}) und Version (\command{Ubuntu (64\, bit)}) des Systems aus, welches später ausgeführt werden soll. Als nächstes stelle man die Größe des Arbeitsspeichers ein, der der virtuellen Maschine zugewiesen werden soll. Hierbei sollte mindestens 1\, GB gewählt werden. Etwas mehr kann aber auch nicht schaden. Der nächste Schritt wäre das Anlegen einer virtuellen Festplatte. Da wir aber von DVD starten wollen, können wir hier \command{Keine Festplatte} auswählen und bestätigen. Jetzt erscheint die frisch erstellte virtuelle Maschine in der Liste auf der linken Seite. Den gesamten Vorgang kannst du noch einmal in \cref{VBox20to50} grafisch nachvollziehen.
 \begin{figure}[h]
 \centering
-\includegraphics[scale=\gfxscale]{VBox20}
+\includegraphics[scale=\gfxscale]{VBox20_de_DE}
 \qquad
-\centering\includegraphics[scale=\gfxscale]{VBox30}
+\includegraphics[scale=\gfxscale]{VBox30_de_DE}
 \\[\bigskipamount]
-\includegraphics[scale=\gfxscale]{VBox40}
+\includegraphics[scale=\gfxscale]{VBox40_de_DE}
 \qquad
-\centering\gfxscalebox{\smallshadow{\includegraphics{VBox50}}}
+\gfxscalebox{\smallshadow{\includegraphics{VBox50_de_DE}}}
 \caption{Schritte zum Anlegen der virtuellen Maschine.}
 \label{VBox20to50}
 \end{figure}
 
 Da einige Programme der Live-DVD sehr aufwendige Berechnungen durchführen, empfiehlt es sich der virtuellen Maschine noch etwas mehr Rechenpower zur Verfügung zu stellen. Wähle hierzu die \command{IMAGINARY Entdeckerbox}-Maschine aus der Liste aus und klicke auf \command{Ändern}. Unter \command{System} $\rightarrow$ \command{Prozessor} kann man festlegen, wie viele Prozessoren (\command{CPUs}) deines Computers die virtuelle Maschine verwenden darf. Innerhalb des grünen Bereichs sollte der Wert hier möglichst hoch eingestellt sein. In \cref{VBox60} wurden also 8 der 16 verfügbaren Prozessoren ausgewählt. Ein Wert innerhalb des roten Bereichs kann in manchen Fällen kontraproduktiv sein. Wer möchte, kann ein wenig mit den Einstellungen experimentieren um die optimale Leistung zu erzielen. Die Einstellungen für die Grafikkarte befinden sich unter \command{Anzeige}. Hier sollte man etwas Grafikspeicher für die virtuelle Maschine reservieren und die 3D-Beschleunigung aktivieren, etwa so wie in \cref{VBox60} gezeigt.
 \begin{figure}[h]
-\centering\includegraphics[scale=\gfxscale]{VBox60}
-\qquad\includegraphics[scale=\gfxscale]{VBox61}
+\centering
+\includegraphics[scale=\gfxscale]{VBox60_de_DE}
+\qquad
+\includegraphics[scale=\gfxscale]{VBox61_de_DE}
 \caption{Der virtuellen Maschine sollten etwa 50\% der tatsächlich vorhanden Prozessoren zugewiesen werden. Auch der Grafikspeicher sollte etwas erhöht und die 3D-Beschleunigung aktiviert werden.}
 \label{VBox60}
 \end{figure}
@@ -67,7 +68,8 @@ Da einige Programme der Live-DVD sehr aufwendige Berechnungen durchführen, empf
 \section{Die Entdeckerbox Live-DVD starten}
 Bevor du die virtuelle Maschine starten kannst, musst du noch sicherstellen, dass dafür auch wirklich die Entdeckerbox-DVD verwendet wird. Das virtuelle DVD-Laufwerk von VirtualBox soll also auf die Entdeckerbox-DVD in dem realen DVD-Laufwerk deines Computers zugreifen. Dies kannst du unter \command{Ändern} $\rightarrow$ \command{Massenspeicher} wie in \cref{VBox70} beschrieben einstellen. Bitte beachte, dass der Name deines DVD-Laufwerks, der hinter \command{Hostlaufwerk} erscheint, wahrscheinlich anders lautet als in der \namecref{VBox70}. Setze nun noch den Haken bei \command{Live-CD/DVD} und beende das Dialogfenster mit \command{OK}.
 \begin{figure}[h]
-\centering\scalebox{\gfxscale}{\hspace{312px}\includegraphics{VBox70}}
+\centering
+\scalebox{\gfxscale}{\hspace{312px}\includegraphics{VBox70_de_DE}}
 \caption{Einlegen der Entdeckerbox-DVD in das virtuelle DVD-Laufwerk.}
 \label{VBox70}
 \end{figure}

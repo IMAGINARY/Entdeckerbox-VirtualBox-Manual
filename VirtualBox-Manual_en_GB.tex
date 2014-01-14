@@ -15,7 +15,7 @@
 
 \def\gfxscale{0.27}
 \newcommand{\gfxscalebox}[1]{\scalebox{\gfxscale}{#1}}
-\newcommand{\smallshadow}[1]{\adjustbox{margin*=-43px -59px -43px  -25px}{#1}}
+\newcommand{\smallshadow}[1]{\adjustbox{margin*=-43px -59px -43px -25px}{#1}}
 \newcommand{\command}[1]{\textsf{\enquote{#1}}}
 
 \begin{document}
@@ -34,7 +34,7 @@ The installation files for Oracle VM VirtualBox can be found in the \command{IMA
 Launch the installation program for your operating system and follow the instructions. After launching, your screen should look similar to the one shown in \cref{VBox10}. Please note that there can be slight differences, depending on your operating system. 
 
 \begin{figure}[h!]
-\centering \gfxscalebox{\smallshadow{\includegraphics{VBox10}}}
+\centering \gfxscalebox{\smallshadow{\includegraphics{VBox10_en_GB}}}
 \caption{Start screen of Oracle VM VirtualBox.}
 \label{VBox10}
 \end{figure}
@@ -43,21 +43,21 @@ Launch the installation program for your operating system and follow the instruc
 In order to create a virtual machine, click on \command{New} in the VirtualBox program. In the following dialogue, you can name your machine, e.\,g. \command{IMAGINARY Entdeckerbox}, and choose type (\command{Linux}) und version (\command{Ubuntu (64\, bit)}) of the system that should run later on. The next step is to choose the size of the internal memory that will be allocated to the virtual machine. The size should not come below 1\, GB, but a bit more doesn't hurt. The next step deals with the creation of a virtual hard drive. Since we want to boot directly from DVD, we can choose \command{Do not add a virtual hard drive} and continue. The newly created virtual machine shows up in the list on the left. This process can be graphically understood in \cref{VBox20to50}. 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=\gfxscale]{VBox20}
+\gfxscalebox{\smallshadow{\includegraphics{VBox20_en_GB}}}
 \qquad
-\centering\includegraphics[scale=\gfxscale]{VBox30}
+\gfxscalebox{\smallshadow{\includegraphics{VBox30_en_GB}}}
 \\[\bigskipamount]
-\includegraphics[scale=\gfxscale]{VBox40}
+\gfxscalebox{\smallshadow{\includegraphics{VBox40_en_GB}}}
 \qquad
-\centering\gfxscalebox{\smallshadow{\includegraphics{VBox50}}}
+\gfxscalebox{\smallshadow{\includegraphics{VBox50_en_GB}}}
 \caption{Steps to create the virtual machine.}
 \label{VBox20to50}
 \end{figure}
 
 Since some of the programs on the live DVD perform elaborate calculations, it is advisable to allocate more processing power to the virtual machine. For this purpose, choose the machine \command{IMAGINARY Entdeckerbox} from the list and click on \command{Settings}. The menu item \command{System} $\rightarrow$ \command{Processor} lets you choose the number of processors (\command{CPUs}) the virtual machine uses. Within the green range, the number should be as high as possible. In \cref{VBox60}, 8 out of 16 available processors were selected. It is not advisable to choose a number in the red range. If you'd like, you can experiment with the settings in order to obtain the best performance. The video card settings can be found under \command{Display}. You should allocate some graphics memory to the virtual machine and enable the 3d acceleration as shown in \cref{VBox60}. 
 \begin{figure}[h]
-\centering\includegraphics[scale=\gfxscale]{VBox60}
-\qquad\includegraphics[scale=\gfxscale]{VBox61}
+\centering\includegraphics[scale=\gfxscale]{VBox60_en_GB}
+\qquad\includegraphics[scale=\gfxscale]{VBox61_en_GB}
 \caption{About half of the available processors should be allocated to the virtual machine. Also, you should increase the graphics memory and enable the 3d acceleration.}
 \label{VBox60}
 \end{figure}
@@ -65,7 +65,7 @@ Since some of the programs on the live DVD perform elaborate calculations, it is
 \section{Launching the Entdeckerbox live DVD}
 Before launching the virtual machine, you have to make sure that it actually uses the Entdeckerbox DVD. The virtual DVD drive needs to access the physical DVD drive of your computer. You can change this under \command{Settings} $\rightarrow$ \command{Storage}, as shown in \cref{VBox70}. Please note that the name of your DVD drive showing up behind \command{Host Drive} may be different from the name shown in \cref{VBox70}. Finally, activate the check box \command{Live CD/DVD} and close the dialogue window by clicking on \command{OK}.
 \begin{figure}[h]
-\centering\scalebox{\gfxscale}{\hspace{312px}\includegraphics{VBox70}}
+\centering\scalebox{\gfxscale}{\hspace{312px}\includegraphics{VBox70_en_GB}}
 \caption{Inserting the Entdeckerbox DVD into the virtual DVD drive.}
 \label{VBox70}
 \end{figure}
